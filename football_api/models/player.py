@@ -13,4 +13,11 @@ class Player(db.Model):
 
     stats = db.relationship("Stats", back_populated="player")
 
-    
+    def __repr__(self):
+        return (
+            f"**Player** "
+            f"player_id: {self.player_id} "
+            f"name: {self.name} "
+            f"position: {self.position} "
+            f"**Player** "
+        )

@@ -24,4 +24,11 @@ class Player(db.Model):
         )
 
 class Season(db.Model):
-    pass
+    """
+    Season Flask-SQLAlchemy Model
+    Represents objects contained in the seasons table
+    """
+    __tablename__ = "seasons"
+    year = db.Column(db.Integer, primary_key=True)
+
+    

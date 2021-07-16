@@ -10,4 +10,7 @@ class Player(db.Model):
     player_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     name = db.Column(db.String(), nullable=True)
     position = db.Column(db.String(), nullable=False)
+
+    stats = db.relationship("Stats", back_populated="player")
+
     

@@ -25,4 +25,6 @@ class Stats(db.Model):
     targets = db.Column(db.Integer)
     receptions = db.Column(db.Integer)
     rec_yards = db.Column(db.Integer)
+    yards_per_reception = db.Column(db.Float)
     fumbles = db.Column(db.Integer)
+    

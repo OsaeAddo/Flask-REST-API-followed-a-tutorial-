@@ -24,3 +24,4 @@ class Stats(db.Model):
     rush_tds = db.Column(db.Integer)
     targets = db.Column(db.Integer)
     receptions = db.Column(db.Integer)
+    rec_yards = db.Column(db.Integer)

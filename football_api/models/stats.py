@@ -11,3 +11,4 @@ class Stats(db.Model):
     team_id = db.Column(db.Integer, ForeignKey("teams.team_id"), nullable=False)
 
     age = db.Column(db.Integer, nullable=False)
+    games = db.Column(db.Integer, nullable=False)

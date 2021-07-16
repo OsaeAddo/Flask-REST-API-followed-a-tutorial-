@@ -33,3 +33,11 @@ class Season(db.Model):
 
     def __repr__(self):
         return f"**Season** " f"year: {self.year} " f"**Season** "
+
+
+class Stats(db.Model):
+    """ 
+    Stat Flask-SQLAlchemy Model
+    Represents objects created in the stats table
+    """
+    

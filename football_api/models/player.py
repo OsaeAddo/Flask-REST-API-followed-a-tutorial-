@@ -31,4 +31,5 @@ class Season(db.Model):
     __tablename__ = "seasons"
     year = db.Column(db.Integer, primary_key=True)
 
-    
+    def __repr__(self):
+        return f"**Season** " f"year: {self.year} " f"**Season** "

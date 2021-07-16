@@ -6,5 +6,8 @@ class Stats(db.Model):
     Represents objects contained in the stats table
     """
     stat_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
-    player_id = db.Column(db.Integer, primary_key("players.player_id"), nullable=False)
+    player_id = db.Column(db.Integer, ForeignKey("players.player_id"), nullable=False)
+    season = db.Column(db.Integer, ForeignKey("seasons.year"), nullable=False)
+    team_id = db.Column(db.Integer, ForeignKey("teams.team_id"), nullable=False)
+
     

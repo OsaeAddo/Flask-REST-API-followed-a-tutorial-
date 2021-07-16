@@ -31,3 +31,4 @@ class Stats(db.Model):
     fantasy_points = db.Column(db.Float)
 
     player = db.relationship("Player", back_populates="stats")
+    team = db.relationship("Team", back_populates="stats")

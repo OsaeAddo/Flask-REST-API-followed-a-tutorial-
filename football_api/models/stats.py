@@ -28,3 +28,4 @@ class Stats(db.Model):
     yards_per_reception = db.Column(db.Float)
     fumbles = db.Column(db.Integer)
     fumbles_lost = db.Column(db.Integer)
+    fantasy_points = db.Column(db.Float)

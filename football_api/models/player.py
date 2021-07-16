@@ -23,21 +23,4 @@ class Player(db.Model):
             f"**Player** "
         )
 
-class Season(db.Model):
-    """
-    Season Flask-SQLAlchemy Model
-    Represents objects contained in the seasons table
-    """
-    __tablename__ = "seasons"
-    year = db.Column(db.Integer, primary_key=True)
-
-    def __repr__(self):
-        return f"**Season** " f"year: {self.year} " f"**Season** "
-
-
-class Stats(db.Model):
-    """ 
-    Stat Flask-SQLAlchemy Model
-    Represents objects created in the stats table
-    """
-    
+   

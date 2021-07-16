@@ -29,3 +29,5 @@ class Stats(db.Model):
     fumbles = db.Column(db.Integer)
     fumbles_lost = db.Column(db.Integer)
     fantasy_points = db.Column(db.Float)
+
+    player = db.relationship("Player", back_populates="stats")

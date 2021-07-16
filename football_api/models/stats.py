@@ -10,4 +10,4 @@ class Stats(db.Model):
     season = db.Column(db.Integer, ForeignKey("seasons.year"), nullable=False)
     team_id = db.Column(db.Integer, ForeignKey("teams.team_id"), nullable=False)
 
-    
+    age = db.Column(db.Integer, nullable=False)

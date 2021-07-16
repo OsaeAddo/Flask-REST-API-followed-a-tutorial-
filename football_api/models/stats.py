@@ -12,3 +12,4 @@ class Stats(db.Model):
 
     age = db.Column(db.Integer, nullable=False)
     games = db.Column(db.Integer, nullable=False)
+    games_started = db.Column(db.Integer, nullable=False)

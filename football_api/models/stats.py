@@ -17,3 +17,4 @@ class Stats(db.Model):
     pass_attempts = db.Column(db.Integer)
     pass_yards = db.Column(db.Integer)
     pass_tds = db.Column(db.Integer)
+    interceptions = db.Column(db.Integer)

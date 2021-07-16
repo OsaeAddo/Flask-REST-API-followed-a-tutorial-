@@ -15,3 +15,4 @@ class Stats(db.Model):
     games_started = db.Column(db.Integer, nullable=False)
     completions = db.Column(db.Integer)
     pass_attempts = db.Column(db.Integer)
+    pass_yards = db.Column(db.Integer)

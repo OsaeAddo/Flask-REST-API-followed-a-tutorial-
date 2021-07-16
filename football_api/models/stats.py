@@ -23,3 +23,4 @@ class Stats(db.Model):
     rush_yards_per_attempt = db.Column(db.Float)
     rush_tds = db.Column(db.Integer)
     targets = db.Column(db.Integer)
+    receptions = db.Column(db.Integer)

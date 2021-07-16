@@ -13,6 +13,7 @@ class Player(db.Model):
 
     stats = db.relationship("Stats", back_populated="player")
 
+    #Define how player should look when logged
     def __repr__(self):
         return (
             f"**Player** "
@@ -21,3 +22,6 @@ class Player(db.Model):
             f"position: {self.position} "
             f"**Player** "
         )
+
+class Season(db.Model):
+    pass

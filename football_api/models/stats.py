@@ -58,4 +58,5 @@ class Stats(db.Model):
             f"yards_per_reception: {self.yards_per_reception}"
             f"rec_tds: {self.rec_tds}"
             f"fumbles: {self.fumbles}"
+            f"fumbles_lost: {self.fumbles_lost}"
         )

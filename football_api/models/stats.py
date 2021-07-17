@@ -46,4 +46,5 @@ class Stats(db.Model):
             f"completions: {self.completions} "
             f"pass_attempts: {self.pass_attempts} "
             f"pass_yards: {self.pass_yards} "
+            f"pass_tds: {self.pass_tds}"
         )

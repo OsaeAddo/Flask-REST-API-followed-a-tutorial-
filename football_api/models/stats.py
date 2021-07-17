@@ -52,4 +52,5 @@ class Stats(db.Model):
             f"rush_yards: {self.rush_yards}"
             f"rush_yards_per_attempt: {self.rush_yards_per_attempt}"
             f"rush_tds: {self.rush_tds}"
+            f"targets: {self.targets}"
         )

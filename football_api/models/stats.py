@@ -43,4 +43,5 @@ class Stats(db.Model):
             f"age: {self.age}"
             f"games: {self.games} "
             f"games_started: {self.games_started} "
+            f"completions: {self.completions} "
         )

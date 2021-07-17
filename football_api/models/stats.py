@@ -37,4 +37,5 @@ class Stats(db.Model):
         return (
             f"**Stats** "
             f"stat_id: {self.stat_id} "
+            f"player_id: {self.player_id}"
         )

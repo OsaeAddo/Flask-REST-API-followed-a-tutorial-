@@ -36,4 +36,5 @@ class Stats(db.Model):
     def __repr__(self):
         return (
             f"**Stats** "
+            f"stat_id: {self.stat_id} "
         )

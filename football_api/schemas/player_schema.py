@@ -9,4 +9,7 @@ class PlayerSchema(Schema):
     name = fields.String(allow_none=False)
     position = fields.String(allow_none=False)
     player_id = fields.Integer()
-    
+
+    @post_load
+    def make_player(self, data, **kwargs):
+        return Player(**data)

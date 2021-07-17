@@ -54,4 +54,5 @@ class Stats(db.Model):
             f"rush_tds: {self.rush_tds}"
             f"targets: {self.targets}"
             f"receptions: {self.receptions}"
+            f"rec_yards: {self.rec_yards}"
         )

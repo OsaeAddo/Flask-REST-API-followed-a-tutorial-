@@ -6,3 +6,7 @@ class PlayerSchema(Schema):
     Player Marshmallow Schema
     Marshmallow schema used for loading/dumping Players
     """
+    name = fields.String(allow_none=False)
+    position = fields.String(allow_none=False)
+    player_id = fields.Integer()
+    

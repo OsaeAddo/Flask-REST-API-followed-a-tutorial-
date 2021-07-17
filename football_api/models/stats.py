@@ -32,3 +32,8 @@ class Stats(db.Model):
 
     player = db.relationship("Player", back_populates="stats")
     team = db.relationship("Team", back_populates="stats")
+
+    def __repr__(self):
+        return (
+            
+        )

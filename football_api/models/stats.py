@@ -40,4 +40,5 @@ class Stats(db.Model):
             f"player_id: {self.player_id}"
             f"season: {self.season}"
             f"team_id: {self.team_id}"
+            f"age: {self.age}"
         )

@@ -59,4 +59,5 @@ class Stats(db.Model):
             f"rec_tds: {self.rec_tds}"
             f"fumbles: {self.fumbles}"
             f"fumbles_lost: {self.fumbles_lost}"
+            f"fantasy_points: {self.fantasy_points}"
         )
